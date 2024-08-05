@@ -15,4 +15,4 @@
 
 ---
 
-Contact me : 'anejjar.walid@appinsciences.tech'
+Contact me : `anejjar.walid@appinsciences.tech`
