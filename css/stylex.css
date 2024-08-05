@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    backdrop-filter: blur(25px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    margin: 30px;
+    height: 83vh;
+    width: 70vh;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo_back {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    opacity: 10%;
+}
+
+.container form {
+    width: 90%;
+}
+
+.form-box {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-box .details {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: rgba(39, 39, 65, 0);
+    color: white;
+}
+
+.form-box input:focus,
+.form-box input:valid {
+    border-color: #7ad2e0;
+}
+
+.form-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 2px 0 16px;
+    color: white;
+}
+
+.remember label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn {
+    width: 50%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 24%;
+    margin-right: 20%;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 110px rgba(255, 255, 255, 0.5);
+    background-color: black;
+    color: white;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sign {
+    margin-top: 12px;
+    color: rgb(207, 200, 200);
+    font-weight: 100;
+}
+
+.sign a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.message.warning {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 60vh;
+        height: auto;
+        padding: 20px 30px;
+    }
+    .container h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .input-b .inputF {
+        font-size: 15px;
+        padding: 15px 40px 15px 15px;
+    }
+    .btn {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 50vh;
+    }
+    .container h1 {
+        font-size: 35px;
+    }
+    .btn {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 45vh;
+    }
+    .container h1 {
+        font-size: 30px;
+    }
+    .btn {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 100vh;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-top: 0;
+    }
+    .container h1 {
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .input-b .inputF {
+        font-size: 14px;
+        padding: 10px 35px 10px 10px;
+    }
+    .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

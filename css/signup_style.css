@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+}
+
+.container {
+    backdrop-filter: blur(25px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    margin: 30px;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo {
+    width: 150px;
+
+}
+
+.container .logo_back {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    opacity: 10%;
+}
+
+.image { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.image img { 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container form .form-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .form-details .form-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.form-details .form-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-details .form-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.form-details .form-box input:focus,
+.form-details .form-box input:valid{
+    border-color: #7ad2e0;
+}
+
+.form-detail .radio {
+    display: flex;
+}
+
+.check {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.check .check-box {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.check-box fieldset {
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 20px 0 20px 50px;
+    display: grid;
+}
+
+.check-box fieldset legend {
+    font-size: 19px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.check-box fieldset label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    margin: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+input[type=date]{
+    color: #cccccc75;
+}
+
+
+form .select-box select {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: rgba(39, 39, 65, 0);
+    color: white;
+    outline: none;
+}
+
+select option {
+    color: black;
+}
+
+.motiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.motiv .details {
+    display: block;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 18px;
+}
+
+form .button {
+    text-align: center;
+}
+
+form .button input {
+    width: 50%;
+    height: 45px; 
+    border-radius: 50px;
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 24%; 
+    margin-right: 20%;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: white;
+    color: black; 
+}
+
+form .button input:hover {
+    box-shadow: 0 10px 110px rgba(255, 255, 255, 0.5);
+    background-color: black;
+    color: white; 
+}
+
+.sign { 
+    margin-top: 12px;
+    color :rgb(207, 200, 200) ; 
+    font-weight: 100;
+}
+.sign a  {
+    text-decoration: none;
+    color :white ; 
+    font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width:500px) {
+    .container {
+        max-width: 100%;
+        background-repeat: repeat;
+        background-position: top;
+    }
+    form .form-details .form-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .check-box fieldset {
+        padding: 5px;
+    }
+    .check-box fieldset legend {
+        padding: 8px;
+        font-size: 15px;
+    }
+    .check-box fieldset label {
+        font-size: 14px;
+    }
+}
