@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylex.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/png" href="img/AIS.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/png" href="./images/aisLogo.png" />
     <title>AIS - Login</title>
-</head>
-<body>
-    <div class="container"> 
-        <img src="img/ais_white-01.png" class="logo_back"> 
-        <form action="" method="POST">
-            <!-- Hidden tag placeholder -->
-            <div class="image">
-               <img src="img/ais_white-01.png" width="150px">
-            </div>
-            <br>
-            <!-- Flash messages placeholder -->
-            <div class="form-box">
-                <span class="details">Email:</span>
-                <input type="email" name="entry.1346292112" placeholder="Enter Your Email" required>
-            </div>
-            <div class="form-box">
-                <span class="details">Password:</span>
-                <input type="password" name="entry.1346292112" placeholder="Enter Your Password" required>
-
-            </div>
-            <div class="remember"> 
-                <label>
-                    <input type="checkbox"> Remember me 
-                </label>
-                <a href="forget_password.html">Forgot password?</a>
-            </div>
-            <input type="submit" class="btn" value="Submit" >
-            
-            <center class= 'sign'>Not registered yet?<a href="sign_up.html"> Join us today!</a></center>
-        </form>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/AIS.png" alt="AppInSciences logo" class="logo_back" />
+      <div class="image">
+        <img src="./images/AIS.png" width="150px" />
+      </div>
+      <h2>Log in</h2>
+      <form action="./2FA.html" method="POST">
+        <div class="input-group">
+          <input type="email" id="email" name="mail" placeholder=" " required />
+          <span class="bar"></span>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            name="pwd"
+            placeholder=" "
+            required
+          />
+          <span class="bar"></span>
+          <label for="email">Password</label>
+          <span
+            class="toggle-password"
+            onclick="toggleLoginPasswordVisibility()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </span>
+        </div>
+        <div class="rememberMe">
+          <input id="s1" type="checkbox" class="switch" />
+          <span class="">Remember Me</span>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="forgot">
+        <a href="./resetPass.html" id="forgotPassword" class="forgot"
+          >Forgot password?</a
+        >
+      </div>
+      <center class="sign">
+        Not registered yet?<a href="./signUp.html"> Join us today!</a>
+      </center>
     </div>
     <footer>
-        <p>&copy; 2024 AiS. All rights reserved.</p>
+      <p>&copy; 2024 AiS. All rights reserved.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src = 'js/script.js'></script>
-</body>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
