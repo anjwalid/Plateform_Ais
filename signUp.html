@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/png" href="./images/aisLogo.png" />
+    <title>AIS - Join Us</title>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="image">
+        <img src="./images/AIS.png" width="150px" />
+      </div>
+      <h2>Create your Account</h2>
+      <img src="./images/AIS.png" alt="AppInSciences logo" class="logo_back" />
+      <form action="./submitted.html" method="" target="hiddenConfirm">
+        <div class="signupForm">
+          <div class="input-group">
+            <input type="text" name="fname" placeholder=" " required />
+            <span class="bar"></span>
+            <label for="name">First name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" name="lname" placeholder=" " required />
+            <span class="bar"></span>
+            <label for="name">Last name</label>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="0612345678"
+              pattern="0[6-7][0-9]{8}"
+              required
+            />
+            <span class="bar"></span>
+            <label for="Telephone">Telephone</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" name="mail" placeholder=" " required />
+            <span class="bar"></span>
+            <label for="email">Email</label>
+          </div>
+
+          <div class="input-group select-box">
+            <select name="cycle" id="cycleSelect" required>
+              <option value="">Cycle</option>
+              <option value="Préparatoire">Préparatoire</option>
+              <option value="Ingénieur">Ingénieur</option>
+            </select>
+          </div>
+
+          <div class="input-group select-box">
+            <select name="filiere" id="filiereSelect" required>
+              <option value="">Filière</option>
+              <option value="CP1">CP1</option>
+              <option value="CP2">CP2</option>
+              <option value="CCN">CCN-1</option>
+              <option value="CCN">CCN-2</option>
+              <option value="2ITE">2ITE-1</option>
+              <option value="2ITE">2ITE-2</option>
+              <option value="2ITE">2ITE-3</option>
+              <option value="ISIC">ISIC-1</option>
+              <option value="ISIC">ISIC-2</option>
+              <option value="ISIC">ISIC-3</option>
+              <option value="GC">GC-1</option>
+              <option value="GC">GC-2</option>
+              <option value="GC">GC-3</option>
+              <option value="GI">GI-1</option>
+              <option value="GI">GI-2</option>
+              <option value="GI">GI-3</option>
+              <option value="GEE">GEE-1</option>
+              <option value="GEE">GEE-2</option>
+              <option value="GEE">GEE-3</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="newPassword"
+              name="pwd"
+              placeholder=" "
+              required
+            />
+            <span class="bar"></span>
+            <label for="password">Password</label>
+            <span class="toggle-password" onclick="togglePasswordVisibility()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </span>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="pwd"
+              placeholder=" "
+              required
+            />
+            <span class="bar"></span>
+            <label for="password">Confirm password</label>
+          </div>
+        </div>
+        <div class="password-requirements">
+          <p>Password requirements:</p>
+          <ul>
+            <li id="length">At least 8 characters long</li>
+            <li id="uppercase">Contains at least one uppercase letter</li>
+            <li id="number">Contains at least one number</li>
+            <li id="match">Passwords must match</li>
+          </ul>
+        </div>
+        <div class="motiv">
+          <span class="details"
+            >Vos motivations pour rejoindre la famille AIS:</span
+          >
+          <textarea
+            id="motivations"
+            name="motiv"
+            rows="4"
+            class="details"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" disabled>Sign up</button>
+        <center class="sign">
+          Already Have An Account ?<a href="./login.html"> Log In!</a>
+        </center>
+      </form>
+    </div>
+    <footer>
+      <p>© 2024 AiS. All rights reserved.</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

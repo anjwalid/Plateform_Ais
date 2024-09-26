@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set New Password - AppInSciences</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="icon" type="image/png" href="./images/aisLogo.png" />
-    <title>AIS - Login</title>
   </head>
   <body>
     <div class="container">
@@ -13,27 +13,19 @@
       <div class="image">
         <img src="./images/AIS.png" width="150px" />
       </div>
-      <h2>Log in</h2>
-      <form action="./2FA.html" method="POST">
-        <div class="input-group">
-          <input type="email" id="email" name="mail" placeholder=" " required />
-          <span class="bar"></span>
-          <label for="email">Email</label>
-        </div>
+      <h2>Set New Password</h2>
+      <form id="newPasswordForm" action="" method="POST">
         <div class="input-group">
           <input
             type="password"
-            id="password"
-            name="pwd"
-            placeholder=" "
+            id="newPassword"
+            name="newPassword"
             required
+            placeholder=" "
           />
           <span class="bar"></span>
-          <label for="email">Password</label>
-          <span
-            class="toggle-password"
-            onclick="toggleLoginPasswordVisibility()"
-          >
+          <label for="password">Set new password</label>
+          <span class="toggle-password" onclick="togglePasswordVisibility()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -50,23 +42,31 @@
             </svg>
           </span>
         </div>
-        <div class="rememberMe">
-          <input id="s1" type="checkbox" class="switch" />
-          <span class="">Remember Me</span>
+        <div class="input-group">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            placeholder=" "
+          />
+          <span class="bar"></span>
+          <label for="password">Confirm new password</label>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" disabled>Set New Password</button>
       </form>
-      <div class="forgot">
-        <a href="./resetPass.html" id="forgotPassword" class="forgot"
-          >Forgot password?</a
-        >
+      <div class="password-requirements">
+        <p>Password requirements:</p>
+        <ul>
+          <li id="length">At least 8 characters long</li>
+          <li id="uppercase">Contains at least one uppercase letter</li>
+          <li id="number">Contains at least one number</li>
+          <li id="match">Passwords must match</li>
+        </ul>
       </div>
-      <center class="sign">
-        Not registered yet?<a href="./signUp.html"> Join us today!</a>
-      </center>
     </div>
     <footer>
-      <p>&copy; 2024 AiS. All rights reserved.</p>
+      <p>© 2024 AiS. All rights reserved.</p>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
