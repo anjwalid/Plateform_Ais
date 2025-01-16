@@ -1,6 +1,6 @@
 # Plateforme dédiée aux membres d'AppInSciences
 
-## Tâches à effectuer par `@Jaafar Alioui` et `@Ait Moh Youness`
+## Tâches à effectuer par `@....`
 
 ### 1. Page de Réinitialisation de Mot de Passe
 > Créer une page de réinitialisation de mot de passe en se basant sur le design des pages de connexion et d'inscription.
